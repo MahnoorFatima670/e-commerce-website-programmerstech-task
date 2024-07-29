@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <header>
+
+        <div class="logo">Fashion store</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><i class="fas fa-user" onclick="sideBar()"> </i></li>
+            </ul>
+
+            <div class="sidebar" id="sideBar">
+
+       <span class="closebutton"  onclick="closeButton()"  id="closeButton"> &times;</span>
+<form>
+<input type="email" name="email" placeholder="Email here">
+<input type="password" name="password" placeholder="Password here">
+<input type="button" name="button" value="Sign up">
+</form>
+     </div>
+            <div class="shopping-cart">
+                <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="first" id="section1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbCEHWAecoXbb--Dx9aWCV0_0rjXxo8YTOvNZAd-2wQIaODlvxpSJQrEzeeGxQMI0snKc&usqp=CAU " width="700px" > 
+    <div>
+<h3 style="color:aliceblue">Trade-in-offer</h3>
+<h1 style="color:Red">Sale 20% Off</h1>
+<h1 style="color:aliceblue">On all Products</h1>
+<button>Shop Now</button>
+</div>
+</div>
+ 
+ <div class="sidebar1">
+ 
+ </div>
+
+<div class="buttons">
+    <button onclick="moneyBac()" onclick="toggleContent('moneyBack')" class="buttons">
+        <h3>Money Back</h3>
+        <p>30 Days Money Back Guarantee</p>
+    </button>
+    <button onclick="freeShip()" onclick="toggleContent('freeShipping')"  class="buttons">
+        <h3>Free Shipping</h3>
+        <p>Shipping on Orders over $99</p>
+    </button>
+    <button onclick="specialSal()" onclick="toggleContent('specialSales')"  class="buttons">
+        <h3>Special Sales</h3>
+        <p>Extra 20% Off on all items</p>
+    </button>
+</div>
+<div class="header1">
+    <div class="moneyback" id="moneyBack">
+        <h1>Risk-Free Satisfaction: Our 30-Day Money Back Guarantee</h1>
+        <p>We stand behind our products/services and want you to be completely satisfied with your purchase. If you are not satisfied for any reason within 30 days of your purchase, we will gladly issue a full refund of your purchase price.</p>
+        <p>Our goal is to ensure your experience with us is positive, and our money back guarantee is just one way we demonstrate our commitment to customer satisfaction.</p>
+    </div>
+    <div class="freeshipping" id="freeShipping">
+        <h1>Free Shipping on Orders Over $99</h1>
+        <p>We offer free shipping on all orders over $99. Take advantage of this offer and save on your purchase today!</p>
+        <p>Our goal is to ensure your experience with us is positive, and our free shipping offer is just one way we demonstrate our commitment to customer satisfaction.</p>
+    </div>
+
+    <div class="specialsales" id="specialSales">
+        <h1>Special Sales: Extra 20% Off on All Items</h1>
+        <p>Enjoy an extra 20% off on all items during our special sales event. Don't miss out on these amazing savings!</p>
+        <p>Our goal is to ensure your experience with us is positive, and our special sales offer is just one way we demonstrate our commitment to customer satisfaction.</p>
+    </div>
+</div>
+<section>
+<div class="container">
+    <img src=" https://www.bonmarche.co.uk/on/demandware.static/-/Sites-master-catalog-bonmarche/default/dw5a435ddf/zoom/90/900582153_default.jpg  " width="350px" height="350px"  alt="no" class="img1">
+<div class="centered"><h1>20% Off On Tunic Dress</h1>  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui illum</p> <button class="btn1" id="shopNowBtn1">Shop Now</button> </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Item Name</h2>
+            <p>Price: <span id="itemPrice">$90</span></p>
+            <p>Quality: <span id="itemQuality">High</span></p>
+            <p>Available Colors:</p>
+            <ul id="colorOptions">
+                <li><input type="radio" name="color" value="Red"> Black</li>
+            <li><input type="radio" name="color" value="Blue"> Red</li>
+                <li><input type="radio" name="color" value="Green"> Green</li>
+            </ul>
+            <p>Quantity:</p>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+            <br><br>
+            <button id="addToCartBtn">Add to Cart</button>
+    </div>
+</div>
+</div>
+
+<div class="container">
+    <img src="https://thumbs.dreamstime.com/b/trendy-young-man-cool-hairstyle-wearing-black-jacket-sunglasses-high-fashion-male-model-posing-black-background-art-184969440.jpg" width="350px" height="350px"  alt="no" class="img2">
+<div class="centered"><h1>Latest Eyewear For You</h1>  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui illum</p> <button class="btn2" id="shopNowBtn">Shop Now</button></div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Item Name</h2>
+        <p>Price: <span id="itemPrice">$100</span></p>
+        <p>Quality: <span id="itemQuality">High</span></p>
+        <p>Available Colors:</p>
+        <ul id="colorOptions">
+            <li><input type="radio" name="color" value="Red"> Black</li>
+            <li><input type="radio" name="color" value="Blue"> Brown</li>
+            <li><input type="radio" name="color" value="Green"> Red</li>
+        </ul>
+        <p>Quantity:</p>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+        <br><br>
+        <button id="addToCartBtn">Add to Cart</button>
+    
+</div>
+</div>
+</div>
+
+<div class="container">
+    <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdNANqcTpyqN3XZ0IbWyYC45_xlzWbQ1VyuA&s" width="350px" height="350px"  alt="no" class="img3">
+<div class="centered"><h1>Let's Lorem Suit Up!</h1>  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui illum</p> <button class="btn3" id="shopNowBtn2">Shop Now</button></div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Item Name</h2>
+        <p>Price: <span id="itemPrice">$90</span></p>
+        <p>Quality: <span id="itemQuality">High</span></p>
+        <p>Available Colors:</p>
+        <ul id="colorOptions">
+     <li><input type="radio"  name="color" value="Red"> Black</li>
+     <li><input type="radio" name="color" value="Blue"> Red</li>
+     <li><input type="radio" name="color" value="Green"> Green</li>
+        </ul>
+        <p>Quantity:</p>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+        <br><br>
+        <button id="addToCartBtn">Add to Cart</button>
+    
+</div>
+</div>
+
+</div>
+
+</section> 
+
+<div class="new-collections">
+<div class="c1">
+<button onclick="showFirstClick()">Women's Latest</button>
+<button onclick="showSecondClick()">Sandals</button>
+<button onclick="showThirdClick()">Beautiful bags</button>
+</div>
+<div class="c2">
+    <div id="firstClick">
+    <img src="   https://cms.brnstc.de/product_images/287x393/cpro/media/images/product/23/8/100147794318700_0_1691143209235.jpg " width="200px"   height="200px"    class="image1">
+    <img src="  https://my-live-01.slatic.net/p/63dbf35f0d7395acd563d0599cb35286.jpg"  class="image2"  width="200px"   height="200px" >
+    <img src=" https://i.pinimg.com/originals/f6/8d/51/f68d515e2ed12bc84be1aba816ed62c5.jpg"   class="image3" width="200px"   height="200px"   >
+</div>
+<div id="secondClick">
+    <img src="  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsp7DH7t6eMKxy_RIwHfhRXjY5dLYe3zdTw&s  " width="200px"   height="200px" class="image4">
+      <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHT5nuGYZGc9HiQQxiBWMNiESsVn2UbIGHpg&s "  class="image5"   width="200px"   height="200px" >
+        <img src="https://image.made-in-china.com/202f0j00OrMqpFotgguz/2024-New-Fashion-Designer-Shoes-High-Heels-Platform-Sandals-for-Women-Fashion-Shoes-Ladies-Shoes-Summer-Footwear.webp " class="image6" width="200px"   height="200px" >
+    </div>
+<div id="thirdClick">
+        <img src="  https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7yu1HIzn7RexYXIwEmt4myhflDUXyDlNbFg&s  " class="image7" width="200px"   height="200px" >
+        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGGQ9I1YvDDGqaK6ZVOUW_BRJPFJBnLZZlkQ&s" class="image8" width="200px"   height="200px">
+        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPAPnsXDX-WWBEfln7tOCrO1YJ6moPDI1JIg&s" class="image9" width="200px"   height="200px">
+    </div>
+ </div>
+
+</div>
+
+<div class="allshirts">
+
+<div class="shirt1">
+ <img src=" https://d3o2e4jr3mxnm3.cloudfront.net/Womens-Watercolor-Patriotic-Daisies-Short-Sleeve-Crusher-Vee_142832_1_lg.png " width="160rem" height="160rem">
+ <p>$146</p>  
+ <p> Beautiful Pink Tee</p> 
+ <button>Add to cart</button>
+</div>
+
+<div class="shirt2">
+    <img src=" https://m.media-amazon.com/images/I/61XsTWLF6qL._AC_UF350,350_QL80_.jpg " width="160rem" height="160rem">
+    <p>$140</p>  
+    <p>Vintage Sun T-Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+   <div class="shirt3">
+    <img src=" https://images.squarespace-cdn.com/content/v1/5b94904345776eaef2526fce/1663082988215-NY89CWRJW4ERO7U5VBTM/womensscript.png" width="160rem" height="160rem">
+    <p>$120</p>  
+    <p>Royal Blue Tee</p> 
+    <button>Add to cart</button>
+   </div>
+
+   <div class="shirt4">
+    <img src=" https://i5.walmartimages.com/seo/Beautiful-Moon-Rose-Drawing-Tattoo-Art-Graphic-Design-Women-T-Shirt_12d3b3f1-5077-44e9-92c2-43330413278e_1.8fec7a0ad8d133d82653ac7c5c14c89b.png " width="160rem" height="160rem">
+    <p>$127</p>  
+    <p>Moon Rose Design Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+
+   <div class="shirt5">
+    <img src=" https://i5.walmartimages.com/seo/Beautiful-Mountain-Nature-Abstract-Design-Art-Women-s-T-Shirt_889f1354-3dbc-4907-8a83-a34522bb8206_1.2c4b3a01ac0791afb30e7973dd0881e8.png?odnHeight=768&odnWidth=768&odnBg=FFFFFF  " width="160rem" height="160rem">
+    <p>$150</p>  
+    <p>Mountain Design Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+   <div class="shirt6">
+    <img src=" https://cms.cloudinary.vpsvc.com/images/c_scale,dpr_auto,f_auto,w_450/legacy_dam/en-us/S001584406/MXP18457-Jerzees-Pique-Women-Polo-Shirt-DP-Tile-001?cb=16e6d01e0e6b9b0daa9d4d880203c3fb07d1d3b9  " width="160rem" height="160rem">
+    <p>$122</p>  
+    <p>Custom Polo Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+   <div class="shirt5">
+    <img src=" https://i5.walmartimages.com/seo/Beautiful-Mountain-Nature-Abstract-Design-Art-Women-s-T-Shirt_889f1354-3dbc-4907-8a83-a34522bb8206_1.2c4b3a01ac0791afb30e7973dd0881e8.png?odnHeight=768&odnWidth=768&odnBg=FFFFFF  " width="160rem" height="160rem">
+    <p>$150</p>  
+    <p>Mountain Design Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+   <div class="shirt6">
+    <img src=" https://m.media-amazon.com/images/I/B1dPmD94WYL._CLa%7C2140%2C2000%7C918Vxrm45YL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SL1500_.png " width="160rem" height="160rem">
+    <p>$122</p>  
+    <p>Hawaiian Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+
+   <div class="shirt5">
+    <img src=" https://images.teemill.com/dsgeobxktufbzbzhpzsfflqnlf4igl1sfyqqwaop7rq8jiva.png.jpg?w=640&h=auto" width="160rem" height="160rem">
+    <p>$150</p>  
+    <p>Ocean Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+   <div class="shirt6">
+    <img src=" https://images.teemill.com/cgbrnqdtak8zkoixc1plcyzfrie8npordolqp1ci1siexghf.png.jpg?w=640&h=auto " width="160rem" height="160rem">
+    <p>$122</p>  
+    <p>Robin Long-Sleeve Shirt</p> 
+    <button>Add to cart</button>
+   </div>
+
+</div>
+<div class="section1">
+<div><h1 style="color: black; text-align: center;">Featured Products</h1></div>
+<div class="border"></div>
+<br>
+    <div class="container1">
+      
+    <div class="small1"><img src="blue-shoe.jpeg"  id="shoeImage"  width="350px" height="350px"  alt="no"><p style="font-weight: bold;">DNK Yellow Shoes</p><p>Men</p><p><span>$150.00</span>  $120.00</p><p>   <i class="fa fa-star checked"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa-solid fa-star"></i>  <i class="fa-regular fa-star"></i></p><div class="circles"><div class="blue-shoe" onclick="changeColor('blue')"></div><div class="green-shoe" onclick="changeColor('green')"></div><div class="pink-shoe"onclick="changeColor('pink')"  ></div>   </div></div> 
+    <div class="small2"><img src=" red-bag.jpeg " id="bagImage" width="350px" height="350px"  alt="no">    <p style="font-weight: bold;">Bright Red Bag</p><p>Women</p><p><span>$130.00</span>  $100.00</p><p>   <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa-regular fa-star"></i> </p>   <div class="circles"><div class="blue-bag" onclick="changeColor1('blue')"></div><div class="red-bag" onclick="changeColor1('red')"></div><div class="pink-bag"onclick="changeColor1('pink')"  ></div></div>     </div> 
+    <div class="small3"><img src="black-jeans.jpeg"  id="jeansImage" width="350px" height="350px"  alt="no">    <p style="font-weight: bold;">Latest Jeans</p><p>Men</p><p><span>$160.00</span>  $120.00</p><p>   <i class="fa fa-star checked=checked"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa-regular fa-star"></i>  </p>   <div class="circles"><div class="blue-jeans" onclick="changeColor2('blue')"></div><div class="black-jeans" onclick="changeColor2('black')"></div><div class="brown-jeans"onclick="changeColor2('brown')"  ></div></div>     </div> 
+    <div class="small4"><img src="red-brac.jpeg" id="bracImage" width="350px" height="350px"  alt="no">  <p style="font-weight: bold;">Bracelets</p><p>Women</p><p><span>$90.00</span>  $70.00</p><p>   <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa-regular fa-star"></i></p>  <div class="circles"><div class="blue-brac" onclick="changeColor3('blue')"></div><div class="green-brac" onclick="changeColor3('green')"></div><div class="red-brac"onclick="changeColor3('red')"  ></div>     </div></div>
+    <div class="small5"><img src="black-brac1.jpeg" id="bracImage1"  width="350px" height="350px"  alt="no"> <p style="font-weight: bold;">DNK Yellow Shoes</p><p>Women</p><p><span>$150.00</span>  $120.00</p><p>   <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa-regular fa-star"></i></p>    <div class="circles"><div class="black-brac1" onclick="changeColor4('black')"></div><div class="grey-brac1" onclick="changeColor4('grey')"></div><div class="pink-brac1"onclick="changeColor4('pink')"  ></div>   </div> </div>
+    <div class="small6"><img src=" red-tee.jpeg " id="teeImage" width="350px" height="350px"  alt="no"> <p style="font-weight: bold;">Beutiful Tees</p><p>Women</p><p><span>$100.00</span>  $80.00</p><p>   <i class="fa fa-star"></i> <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa fa-star"></i>  <i class="fa-regular fa-star"></i></p>   <div class="circles"><div class="red-tee" onclick="changeColor5('red')"></div><div class="black-tee" onclick="changeColor5('black')"></div><div class="white-tee"onclick="changeColor5('white')"  ></div>    </div></div>
+    
+    </div>
+
+
+</div>
+
+
+<div class="follow">
+<p>Follow us on:</p>
+<div class="icon">
+<i class="fab fa-facebook" id="icon1"></i>
+<i class="fab fa-twitter" id="icon2"></i>
+<i class="fab fa-instagram" id="icon3"></i>
+<i class="fab fa-youtube" id="icon4"></i>
+</div>
+</div>
+
+
+<div class="contact">    <h3>Contact form</h3>
+<input type="text" name="name" placeholder="Enter Your Name">
+<input type="text" name="name" placeholder="Enter a valid email address">
+<textarea placeholder=" Enter Your message "></textarea>
+<button>Submit</button>
+</div>
+
+<div class="mail"><h2>Subscribe to Get 50% Discount Price</h2>
+<form><input type="text"   name="name" placeholder="Email Address">
+<button class="btn4">Shop Now</button>
+</form>
+</div>
+
+<div class="footer">
+        <p>Fashion Store</p>
+    
+<ul>
+    <li>Shipping and Return Policy</li>
+    <li>Help Center</li>
+    <li>Terms and Conditions</li>
+    <li>Privacy Policy</li>
+
+
+</ul>
+<ul>
+    <li>About us</li>
+    <li>Contact</li>
+    <li>News</li>
+    <li>Support</li>
+
+
+</ul>
+<ul>
+    <li>Products</li>
+    <li>Overview</li>
+    <li>Pricing</li>
+    <li>Relcases</li>
+
+</ul>
+  <button class="btn5" >  <i class="fa-brands
+     fa-google-play"></i>Google Play</button>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>

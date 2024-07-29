@@ -1,0 +1,1425 @@
+body {
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding:0;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    color: #fff;
+    gap:25rem;
+    color:aliceblue;
+    background-color:#333;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Helvetica Neue",Arial, Helvetica, sans-serif;
+   text-shadow: 3px 3px #000;
+}
+
+.logo:hover {
+   cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color:grey;
+}
+
+.nav-links i:hover {
+    text-decoration: underline;
+    color:rgb(189, 36, 36);
+}
+
+.sidebar
+{
+    
+height:0;
+    width:0;
+    background-color:transparent;  
+    top:0;
+    right:0;
+    overflow-x: hidden;
+    transition:0.5s; 
+    border-radius: 5px;
+    position: absolute;
+
+}
+
+.sidebar form
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;  
+}
+
+.sidebar form input
+{
+    padding:0.7rem;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    display: flex;
+    
+    
+}
+
+.sidebar input[type="button"]
+{
+    background-color:rgb(223, 55, 55);
+    border:none;
+    outline:none;
+    padding:1.2em;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+.sidebar input[type="button"]:hover
+{
+    background-color: rgb(187, 56, 78);
+}
+
+.closebutton
+{
+    position:absolute;
+    top:2.3rem;
+    right:0.9rem;
+    font-size: 1.8rem;
+
+
+}
+
+.closebutton:hover
+{
+    cursor:pointer;
+}
+
+.shopping-cart i:hover
+{
+    color:grey;
+    cursor: pointer;
+}
+
+
+.first
+{
+   display: flex;
+   align-items: center;
+   background-color:black; 
+}
+
+.first h3
+{
+    text-shadow: 2px 2px #000;
+}
+.first h1
+{
+    text-shadow: 2px 2px #000;
+}
+.first img
+{
+    margin-right: 100px;
+}
+
+.first button
+{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding:1.5rem;
+    color: aliceblue;
+    font-weight: bold;
+    cursor: pointer;
+    background-color:#272525;
+}
+
+.first button:hover
+{
+background-color:#242020;
+color:wheat;
+}
+.circle-section
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+   gap: 2rem;
+   cursor: pointer;
+   margin-top: 5rem;
+  
+
+}
+
+.circle1:hover,.circle2:hover,.circle3:hover
+{
+    background-color:rgb(189, 36, 36);
+}
+.circle1
+{
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    
+    border: 3px solid black;
+    color: #fff;
+}
+
+
+.circle2
+{
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    
+    border: 3px solid black;
+    color: #fff;
+}
+
+.circle3
+{
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    
+    border: 3px solid black;
+    color: #fff;
+}
+
+.first.intro
+{
+    line-height: 150%;
+    
+   
+
+}
+.intro button
+{
+    border: none;
+    padding:13px;
+    border-radius: 5px;
+    width:130px;
+    cursor: pointer;
+    color: aliceblue;
+    background-color: rgba(11, 106, 143, 0.089);
+    
+
+}
+
+.flip
+{
+    padding:1rem;
+    background-color: #333;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.flip1
+{
+    border-radius: 50%;
+    background-color:white;
+    width:15px;
+    height:15px;
+}
+.flip2 button
+{
+    border-radius: 50%;
+    background-color:white;
+    width:15px;
+    height:15px;
+}
+.flip1:hover
+{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.flip2 button:hover
+{
+    background-color: grey;
+    cursor: pointer;
+}
+
+.sidebar1
+{
+    
+height:0;
+    width:0;
+    background-color:transparent;  
+    top:0;
+    right:0;
+    overflow-x: hidden;
+    transition:0.5s; 
+    border-radius: 5px;
+    position: absolute;
+
+}
+
+.sidebar form
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    
+    
+}
+
+.sidebar form input
+{
+    padding:0.7rem;
+    border-radius: 5px;
+    outline:none;
+    border:none;
+    display: flex;
+    
+    
+}
+
+.sidebar input[type="button"]
+{
+    background-color:rgb(223, 55, 55);
+    border:none;
+    outline:none;
+    padding:1.2em;
+    border-radius: 5px;
+    cursor:pointer;
+
+}
+.sidebar input[type="button"]:hover
+{
+    background-color: rgb(187, 56, 78);
+}
+
+.closebutton
+{
+    position:absolute;
+    top:2.3rem;
+    right:0.9rem;
+    font-size: 1.8rem;
+
+
+}
+
+.closebutton:hover
+{
+    cursor:pointer;
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:1rem;
+    padding:1.5rem;
+    background-color:black;
+    cursor: pointer;
+     color:aliceblue;
+    
+}
+
+.buttons button
+{
+    border-radius: 5px;
+}
+
+.moneyback
+{
+    text-align:center;
+    color:white;
+    
+}
+
+.moneyback,.specialsales,.freeshipping
+{
+     padding:2rem;
+     
+    
+}
+
+.moneyback h1
+{
+font-size: 1.3rem;
+}
+
+
+.freeshipping h1
+{
+font-size: 1.3rem;
+}
+
+.specialsales h1
+{
+font-size: 1.3rem;
+}
+.header1 >div
+{
+    display: none;
+}
+
+.freeshipping
+{
+    text-align: center;
+    color:white;
+    
+}
+
+.specialsales
+{
+    text-align: center;
+    color:white;
+}
+
+.header1
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    background-color:#363434;
+    
+
+}
+
+.fa-star
+{
+    color: rgb(218, 197, 82);
+}
+.container
+{
+    position:relative;
+    text-align: center;
+    color:rgb(12, 79, 105);
+
+}
+
+.container img
+{
+    opacity:0;
+    transform:translateX(100px);
+    transition: transform 0.5s ease-in-out,opacity 0.5s ease-in-out;
+    border:1px solid rgb(11, 105, 143);
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+   
+}
+
+
+
+.container img:hover
+{
+    transform: scale(1.1);
+}
+
+
+.container img.animate
+{
+    opacity:1;
+    transform:translateX(0);
+}
+.centered
+{
+position:absolute;
+top:65%;
+left:50%;
+transform: translate(-50%,-50%);
+color: aliceblue;
+
+}
+section
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:1rem;
+    flex-wrap: wrap;
+    padding:2rem;
+}
+
+.btn1
+{
+    cursor: pointer;
+    width:12rem;
+    background-color:black;
+    color:whitesmoke;
+    padding:0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn1:hover
+{
+    background-color: rgb(77, 73, 73);
+}
+
+.btn1.active
+{
+background-color: black;
+color:#fff;
+
+
+}
+
+.btn2
+{
+    cursor: pointer;
+    width:12rem;
+    background-color:black;
+    color:whitesmoke;
+    padding:0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn2:hover
+{
+    background-color:rgb(77,73,73);
+}
+
+.btn2.active
+{
+background-color: black;
+color:#fff;
+
+
+}
+
+.btn3
+{
+    cursor: pointer;
+    width:12rem;
+    background-color:black;
+    color:whitesmoke;
+    padding:0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn3:hover
+{
+    background-color: rgb(77,73,73);
+}
+
+
+.btn3.active
+{
+background-color: black;
+color:#fff;
+
+
+}
+
+.new-collections
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#firstClick img
+{
+    transition:transform 0.5s ease;
+}
+
+#firstClick img:hover
+{
+    transform:scale(1.3);
+}
+
+#secondClick img
+{
+    transition:transform 0.5s ease;
+}
+
+#secondClick img:hover
+{
+    transform:scale(1.3);
+}
+
+#thirdClick img
+{
+    transition:transform 0.5s ease;
+}
+
+#thirdClick img:hover
+{
+    transform:scale(1.3);
+}
+.new-collections img
+{
+
+
+    border-radius: 5px;
+
+}
+.new-collections .c2
+{
+    
+    padding:3rem;
+    background-color: #3333336b;
+   
+}
+
+.c1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10rem;
+    background-color: #3333336b;
+}
+.c1 button
+{
+
+    cursor: pointer;
+    width:12rem;
+    background-color: #3333336b;
+    color:whitesmoke;
+    padding:0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+
+}
+
+.c1 button:hover
+{
+    background-color: #8d858541;
+}
+
+.firstClick img
+{
+    display: block;
+}
+
+.c2 div
+{
+    display: none;
+}
+
+.c2 img
+{
+    cursor: pointer;
+}
+
+
+.allshirts
+{
+    background-color:white;
+    padding:2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+
+.allshirts img
+{
+    transition:transform 0.5s ease;
+}
+
+.allshirts img:hover
+{
+    transform:scale(1.1);
+}
+.allshirts p
+{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.allshirts button
+{
+    text-align: center;
+    outline:none;
+    border:none;
+    background-color: #333;
+    color:aliceblue;
+    padding:0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius:5px;
+    margin:0 auto;
+    display:flex;
+}
+
+.allshirts button:hover
+{
+    background-color: black;
+}
+.section1
+{
+    background-color:#333;
+    padding:2rem;
+}
+
+.border
+
+{
+
+    border:1.8px solid #333;
+
+   width:10%;
+   margin: 0 auto;
+
+}
+#secondClick img
+{
+       width:"400px";
+       height:"400px";
+}
+
+.section1 img
+{
+    width:170px;
+    height:170px;
+}
+
+.container1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:0.7rem;
+    flex-wrap: wrap;
+}
+
+.container1 img
+{
+    transition:transform 0.5s ease;
+}
+
+.container1 img:hover
+{
+    transform:scale(1.1);
+}
+
+span 
+{
+
+    text-decoration: line-through;
+}
+.small1,.small2,.small3,.small4,.small5,.small6,.small7,.small8 p
+{
+    color:black;
+    
+}
+
+.green-shoe
+{
+    background-color:rgb(22, 173, 22);
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+   
+}
+
+.green-shoe:hover,.blue-shoe:hover,.pink-shoe:hover
+{
+
+   
+    border:2px solid black;
+}
+
+.blue-shoe
+{
+    background-color:rgb(4, 4, 65);
+    padding: 2px;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+  
+
+
+}
+
+.pink-shoe
+{
+    background-color:rgb(187, 43, 67);
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    padding: 2px;
+    cursor:pointer;
+    border:2px solid white;
+}
+.green{
+    background-color:rgb(22,173,22);
+
+}
+
+.blue{
+    background-color: red;
+    
+}
+
+.pink{
+    background-color: red;
+    
+}
+
+.circles
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:0.5rem;
+    
+}
+
+.brown{
+    background-color:brown;
+
+}
+
+.black{
+    background-color:black;
+    
+}
+
+.blue{
+    background-color:rgb(4, 4, 34);
+    
+}
+
+.black-jeans:hover,.blue-jeans:hover,.brown-jeans:hover
+{
+
+   
+    border:2px solid black;
+}
+.blue-jeans
+{
+    background-color:rgb(4, 4, 65);
+    
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+
+
+}
+
+.black-jeans
+{
+    background-color:black;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.brown-jeans
+{
+    background-color:brown;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.blue-brac
+{
+    background-color:rgb(3, 48, 66);
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.green-brac
+{
+    background-color:rgb(4, 59, 4);
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.red-brac
+{
+    background-color:red;
+    
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+.green-brac:hover,.blue-brac:hover,.red-brac:hover
+{
+
+   
+    border:2px solid black;
+}
+
+.pink-brac1
+{
+    background-color:rgb(224, 118, 136);
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.grey-brac1
+{
+    background-color:grey;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.black-brac1
+{
+    background-color:black;
+    
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+.pink-brac1:hover,.grey-brac1:hover,.black-brac1:hover
+{
+
+   
+    border:2px solid black;
+}
+
+.red-tee
+{
+    background-color:red;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.black-tee
+{
+    background-color:black;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+
+.white-tee
+{
+    background-color:white;
+    
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+.red-tee:hover,.white-tee:hover,.black-tee:hover
+{
+
+   
+    border:2px solid black;
+}
+
+.blue-bag
+{
+    background-color:rgba(5, 67, 92, 0.74);
+    
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.red-bag
+{
+    background-color:red;
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.pink-bag
+{
+    background-color:rgb(218, 18, 51);
+    border-radius: 50%;
+    width:10px;
+    height:10px;
+    cursor:pointer;
+    border:2px solid white;
+    padding: 2px;
+}
+
+.red-bag:hover,.blue-bag:hover,.pink-bag:hover
+{
+
+   
+    border:2px solid black;
+}
+
+.mail
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: whitesmoke;
+    
+}
+
+.mail form input
+{
+    border: 2px solid black;
+}
+.btn4
+{
+    cursor: pointer;
+    width:12rem;
+    background-color:black;
+    color:#fff;
+    padding:0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn4:hover
+{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+.follow 
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: whitesmoke;
+padding:2rem;
+
+}
+
+.icon {
+   
+    transition: transform 0.3s;
+    transition: transform 0.3s,opacity 0.3s;
+}
+
+.icon.thrilled {
+    animation: thrill 0.5s ease-in-out;
+    opacity:0.5;
+}
+
+@keyframes thrill {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.icon i
+{
+    margin-left: 0.5rem;
+    border:2px solid black;
+    border-radius: 50%;
+    padding:1rem;
+    cursor:pointer;
+    transition: transform opacity 0.3s;
+}
+
+.icon i:hover
+
+{
+opacity:0.5;
+}
+
+.contact
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    border: none;
+    outline: none;
+    background-color: #333;
+    width:23rem;
+    margin: 0 auto;
+    padding:1.5rem;
+    
+}
+
+.contact input
+{
+    border: none;
+    outline:none;
+padding:1rem;
+background-color: #00000083;
+color:aliceblue;
+}
+
+.contact textarea
+{
+padding:2rem;
+color:aliceblue;
+background-color: #00000083;
+}
+
+.contact button
+{
+    background-color: black;
+    color:GREY;
+    padding:1rem;
+    border:none;
+    outline:none;
+    width:7rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact button:hover
+{
+    background-color: transparent;
+}
+.btn5
+{
+    cursor: pointer;
+    width:9rem;
+   background-color: transparent;
+    color:aliceblue;
+    padding:0.8rem;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+.btn5 i
+{
+    margin-right: 0.5rem;
+}
+
+.btn5:hover
+{
+    background-color: black;
+}
+
+.mail form input
+{
+    border-radius: 5px;
+    padding:0.8rem;
+    text-align: center;
+
+}
+
+.footer
+{
+    background-color:rgba(17, 16, 16, 0.952);
+    padding:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+
+    
+}
+
+.footer ul li
+{
+    color: whitesmoke;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    line-height:200%;
+    cursor: pointer;
+}
+
+.footer ul li:hover
+{
+    text-decoration: underline;
+}
+
+.footer p
+{
+    color: white;
+    font-family: "Helvetica Neue",Arial, Helvetica, sans-serif;
+}
+
+.footer .btn5
+{
+    margin-left: 2rem;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+   
+    margin-top: 1rem;
+    
+}
+
+/* Modal content */
+.modal-content {
+    background-color:#333;
+    margin: 10% auto; /* Centered and top margin */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 50%; 
+    text-align: center;
+    color:aliceblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:25rem;
+    /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+    color: #ebe3e3;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(189, 20, 20);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal content styles */
+.modal-content h2 {
+    
+}
+
+#colorOptions li {
+    margin-bottom: 5px;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #333;
+    flex-direction:row;
+    
+    
+}
+
+#quantity {
+    width: 60px;
+}
+
+#addToCartBtn {
+    background-color: rgb(10, 11, 12);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#addToCartBtn:hover {
+    background-color: red;
+}
+
+@media(max-width:1024px)
+{
+    .container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .c1
+    {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap:0rem;
+        padding:2rem;
+        height: 100px;
+    }
+
+
+    .c2 img 
+    {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    margin-top: 1rem;
+    }
+    
+    .header1
+    {
+        
+        flex-wrap: wrap;
+        gap:1rem;
+    }
+
+    .follow
+    {
+        flex-wrap: wrap;
+        gap:0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon
+    {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+        flex-wrap: wrap;
+        
+    }
+
+    .mail h2
+
+{
+    font-size: 1rem;
+    text-align:center;
+}
+   
+
+.mail form input
+{
+    margin-bottom: 1rem;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.6rem;
+    flex-wrap: wrap;
+    padding: 0rem;
+    margin: 0;
+    text-align: center;
+}
+
+.btn5
+{
+    align-items: center;
+
+    margin-right: 3rem;
+}
+
+}
